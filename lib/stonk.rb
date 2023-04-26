@@ -17,15 +17,17 @@ class Pickle
         else
           if sell - buy > profit
             profit = sell - buy
-            out = [array.index(buy), array.index(sell)]
+            out = [day, array.index(sell)]
           end
         end
       end
     end
     return out
   end
+
 end
 
-#Pickle.new.pick([30,15,20,2,4,10,15,12]) bug where it does the right thing
+#Pickle.new.pick([30,15,20,2,4,10,15,12]) #bug where it does the right thing
 # but chooses the first index of number occurence not the correct one. ie 15 should
 #be index 6 not 1
+
